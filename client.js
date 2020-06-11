@@ -94,6 +94,7 @@ let saveTime = false;
 let saved_time = [];
 let nickname = "";
 
+
 function readNick() {
     var nickname = document.getElementById("nickname_input").value;
     if (nickname != "" && !(/ /.test(nickname))) {

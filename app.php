@@ -1,25 +1,6 @@
 <?php
 
-$servername = "localhost";
-$database  = "id13447387_mrufkobaza";
-$username = "id13447387_mrufka";
-$password = "}V?/pUhMB1R%@0jK";
-
-// Łączenie z bazą danych:
-$conn = new mysqli($servername, $username, $password);
-
-if (!mysqli_select_db($conn, $database)){
-	echo "Database not selected";
-}
-else{
-	echo "Database selected";
-}
-
-// Sprawdzanie połączenia
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
+include_once("connection.php");
 
 
 if(getenv('REQUEST_METHOD') == 'POST') {
@@ -32,17 +13,11 @@ if(getenv('REQUEST_METHOD') == 'POST') {
 	echo $decoded_data_array[duration_m];
 	echo $decoded_data_array[duration_s];
 	
-	$sql = "INSERT INTO Scores(nickname, score, duration_m, duration_s) VALUES ('$decoded_data_array[nickname]', '$decoded_data_array[score]','$decoded_data_array[duration_m]','$decoded_data_array[duration_s]')";
-
-	//$sql = "INSERT INTO Scores(nickname, score, duration_m, duration_s) VALUES ('Micko', 'Wynik','minuty','sekundy')";
-
+	$post_score_query = "INSERT INTO Scores(nickname, score, duration_m, duration_s) VALUES ('$decoded_data_array[nickname]', '$decoded_data_array[score]','$decoded_data_array[duration_m]','$decoded_data_array[duration_s]')";
 	
-	if (!mysqli_query($conn, $sql))
+	if (!mysqli_query($conn, $post_score_query))
 	{
 		echo "Not inserted";
-	}
-	else{
-		echo "Inserted";
 	}
 
     exit();
