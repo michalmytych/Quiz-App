@@ -1,5 +1,6 @@
 <?php
 
+
 include_once("connection.php");
 
 
@@ -22,4 +23,13 @@ if(getenv('REQUEST_METHOD') == 'POST') {
 
     exit();
 }
+
+// UZYSKAJ DANE Z PYTAŃ Z BAZY DANYCH
+
+// PRZEŚLIJ JSON Z PHP DO JS
+$questions_array = array('question', 'answ1', 'answ2', 'answ3', 'answ4', 'valid_answ');
+echo json_encode($questions_array);
+
+
+
 ?>
