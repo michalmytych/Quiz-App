@@ -3,16 +3,26 @@
 
 include_once("connection.php");
 
+/*
+if(getenv('REQUEST_METHOD') == 'GET') {
+	$get_questions_query = mysql_query("SELECT * FROM Questions", $conn);
+
+	if (!mysqli_query($conn, $get_questions_query))
+	{
+		echo "Connection with database failed";
+	}
+
+
+
+	exit();
+} 
+*/
+
 
 if(getenv('REQUEST_METHOD') == 'POST') {
 	$client_data = file_get_contents("php://input");
 
 	$decoded_data_array = json_decode($client_data, true);
-
-	echo $decoded_data_array[nickname];
-	echo $decoded_data_array[score];
-	echo $decoded_data_array[duration_m];
-	echo $decoded_data_array[duration_s];
 	
 	$post_score_query = "INSERT INTO Scores(nickname, score, duration_m, duration_s) VALUES ('$decoded_data_array[nickname]', '$decoded_data_array[score]','$decoded_data_array[duration_m]','$decoded_data_array[duration_s]')";
 	
