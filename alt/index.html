@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <title>AntQuiz - quiz o mrówkach</title>
+    <title>PyQuiz - Quiz o Pythonie</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 
         <div id="gamestarter_box" class="gamestarter-box-cls">
             <input method="post" id="nickname_input" placeholder="nickname" class="nickname-input-cls"></input>
-            <button value='send' id="submit" class="nick-submit-cls">Rozpocznij quiz</button>
+            <button value='send' id="submit" class="nick-submit-cls">Rozpocznij quiz!</button>
         </div>
 
         <h4 id="question_block" class="question-block-cls"></h4>
@@ -29,7 +29,6 @@
             <button id="answ3" class="answ-button" type="submit"></button>
             <button id="answ4" class="answ-button" type="submit"></button>
         </div>
-        <!-- kontener uwidaczniany po zakonczonym quzie: -->
         <div id="end_container" class="end-container-cls">
             <div id="score_amount_view" class="score_amt_cls"></div>
             <h3 id="score_viewing" class="score-viewing-block-cls"></h3>
@@ -40,8 +39,10 @@
 
     <div id="session_nickname"></div>
     <script src="client.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,74 @@
+[
+    {
+        "question": "Jak wiele jest gatunków mrówek na świecie?",
+        "answ1": "Około 12 tys.",
+        "answ2": "Około 3 tys.",
+        "answ3": "Około 20 tys.",
+        "answ4": "Około 650",
+        "valid_answ": 1
+    },
+    {
+        "question": "Ukłucie przdstawicielki jednego z gatunków mrówek jest uważane za szczególnie bolesne. Który to gatunek?",
+        "answ1": "Mrówka igła",
+        "answ2": "Mrówka pociskowa",
+        "answ3": "Palaponera cravata",
+        "answ4": "Mrówka sztyletowa",
+        "valid_answ": 2
+    },
+    {
+        "question": "Osobniki jakiego gatunku mrówek osiągają największe rozmiary?",
+        "answ1": "Mrówka igła",
+        "answ2": "Mrówka pociskowa",
+        "answ3": "Mrówka Mrówka ",
+        "answ4": "Mrówka pociskowa",
+        "valid_answ": 2
+    },
+    {
+        "question": "Do jakiej nadrodziny należą mrówki?",
+        "answ1": "Mrówkowatych",
+        "answ2": "Błonkówek",
+        "answ3": "Trzonkówki",
+        "answ4": "Os",
+        "valid_answ": 4
+    },
+    {
+        "question": "Czym charakteryzują się robotnice mrówek?",
+        "answ1": "Są tak naprawdę samcami",
+        "answ2": "Ich liczebność w mrowisku może dochodzić do miliona",
+        "answ3": "Mają niedorozwinięte narządy rozrodcze",
+        "answ4": "Lubią alkohol",
+        "valid_answ": 3
+    },
+    {
+        "question": "Mrówki grzybiarki są wyjątkowo silne. Ile razy większy od ich własnej wagi, może być niesiony przez nie ciężar?",
+        "answ1": "30 razy",
+        "answ2": "około 100 razy",
+        "answ3": "50 razy",
+        "answ4": "15 razy",
+        "valid_answ": 3
+    },
+    {
+        "question": "W gnieździe mrówek może występować jedna królowa, Jak nazywa się taki stan?",
+        "answ1": "Autokracja",
+        "answ2": "Monoginia",
+        "answ3": "Elewacja",
+        "answ4": "Monogynia",
+        "valid_answ": 2
+    },
+    {
+        "question": "Wierzy się, że mrówki istnieją na świecie od bardzo dawna. Jak dawna?",
+        "answ1": "od 2 miliardów lat",
+        "answ2": "od 120 milionów lat",
+        "answ3": "od 95 milionów lat",
+        "answ4": "od 500 milionów lat",
+        "valid_answ": 2
+    },
+    {
+        "question": "Jak dużą częścią fauny regionów tropikalnych są mrówki?",
+        "answ1": "około 25%",
+        "answ2": "około 50%",
+        "answ3": "około 10%",
+        "answ4": "około 4%",
+        "valid_answ": 1
+    }
+]
