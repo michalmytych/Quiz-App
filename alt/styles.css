@@ -103,10 +103,11 @@ body{
 .nick-submit-cls{
     width: 50%;
     margin: 0 auto;
+    background: linear-gradient(90deg, rgba(32,84,126,0) 0%, rgba(32,84,126,0.6931723372942927) 10%, rgba(32,84,126,1) 25%, rgba(32,84,126,1) 50%, rgba(32,84,126,1) 75%, rgba(32,84,126,0.7239846622242647) 91%, rgba(32,84,126,0) 100%);
 }
 
 .nick-submit-cls:active{
-    background-color: #DDD92A;
+    background: linear-gradient(90deg, rgba(47, 147, 179,0) 0%, rgba(47, 147, 179,0.6931723372942927) 10%, rgba(47, 147, 179,1) 25%, rgba(47, 147, 179,1) 50%, rgba(47, 147, 179,1) 75%, rgba(47, 147, 179,0.7239846622242647) 91%, rgba(47, 147, 179,0) 100%);
 }
 
 .answ-button:hover{
