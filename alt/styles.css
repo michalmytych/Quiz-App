@@ -1,12 +1,16 @@
 *{
-    color: #FFFFFF;
-    background-color: #F7A072;
+    color: #FFFFFF;    
     text-shadow: 3px 2px 3px rgba(0,0,0,0.4);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body{
+    background-image: url("img/bg2.jpeg");
+    background-size: cover;
+}
 
 .nickname-input-cls{
+    color: #FFFFFF;  
     display: block;
     width: 50%;
     height: 2rem;
@@ -18,6 +22,12 @@
     font-size: 1.2rem;
     text-shadow: none;
     border-style: none;
+    background-color: #20547e;
+}
+
+.nickname-input-cls:focus, .answ-button:focus, .nick-submit-cls:focus{
+    outline-width: 0;
+    background-color: #20547e;
 }
 
 .main-container-cls{
@@ -25,14 +35,13 @@
     margin: 3rem;
     margin-top: 0.7rem;
     padding: 1.3rem 2rem 3rem 2rem;
-    background-color: #76BED0;
     border-radius: 10px;
 }
 
 .header01-cls, .question-block-cls, .answ-sect-cls, .gamestarter-box-cls{
     text-align: center;
     padding: 1rem;
-    background-color: #F55D3E;
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     margin-left:auto;
     margin-right: auto;
@@ -41,24 +50,27 @@
     width: 60%;
 }
 
-.question-block-cls, .score-viewing-block-cls, .end-container-cls{
-    width: 60%;
-    background-color: #F7CB15;
+.header01-cls, .end-container-cls{
+    background-color: rgba(255,216,76,0.4);
+    backdrop-filter: blur(5px);
+}
 
+.question-block-cls, .score-viewing-block-cls, .end-container-cls, .score_amt_cls{
+    width: 60%;
+    background-color: #3773A5;
 }
 
 .score_amt_cls{
-    background-color:#F55D3E;
     padding: 2rem;
     border-radius: 50%;
     width: 5%;
     margin: 0 auto;
     margin-bottom: 2rem;
     font-size: 2rem;
+    background-color: #20547e;
 }
 
 .end-container-cls{
-    background-color: #00A7E1;
     text-align: center;
     padding: 2rem;
     display: none;
@@ -71,6 +83,7 @@
     padding: 2rem;
     display: none;
     border-radius: 10px;
+    background-color: #20547e;
 }
 
 .answ-sect-cls, .gamestarter-box-cls{
@@ -84,7 +97,7 @@
     margin: 0.7rem auto 0.7rem auto;
     border-radius: 10px;
     border-style: none;
-    background-color: #FF9B42;
+    background-color: #3773A5;
 }
 
 .nick-submit-cls{
@@ -97,15 +110,15 @@
 }
 
 .answ-button:hover{
-    background-color: #F7CB15;
+    background-color: #5893c3;
 }
 
 .answ-button:active{
-    background-color: #DDD92A;
+    background-color: #20547e;
 }
 
 .duration-viewing-cls{
-    background-color:#F55D3E;
+    background-color: #20547e;    
     text-align: center;
     font-size: 2rem;
     width: 10rem;
@@ -154,7 +167,7 @@
         margin-bottom: 0.6rem;
     }
     .score_amt_cls{
-        background-color:#F55D3E;
+        background-color: #3773A5;
         padding: 2rem;
         border-radius: 50%;
         width: 18%;
@@ -164,11 +177,5 @@
     }
     .score-viewing-block-cls{
         margin-bottom: 0.6rem;
-    }
-    .answ-button:hover{
-        background-color: #FF9B42;
-    }
-    .answ-button:active{
-        background-color: #DDD92A;
     }
 }

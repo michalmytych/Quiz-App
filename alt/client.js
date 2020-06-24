@@ -125,7 +125,7 @@ function goToScore(score, nickname) {
         scoreView.innerText = "Brawo " + nickname + ", osiągnąłeś ponad połowę punktów!";
     }
     else {
-        scoreView.innerText = "Cóż, nie znasz się na mrówkach!"
+        scoreView.innerText = "Cóż, nie znasz się na Pythonie!"
     }
     scoreView.style.display = 'block';
     endContBlock.style.display = 'block';
@@ -155,7 +155,6 @@ function checkChoice(question_no, choice) {
     if (choice == questions_data[question_no].valid_answ) {
         score++;
     }
-
 
     return score;
 }
