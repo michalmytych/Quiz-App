@@ -1,1 +1,6 @@
 
+"{\"nickname\":\"Micha\",\"score\":9,\"duration_m\":0,\"duration_s\":26}"
+
+"{\"nickname\":\"JurekOwsiak\",\"score\":9,\"duration_m\":0,\"duration_s\":36}"
+
+"{\"nickname\":\"1\",\"score\":1,\"duration_m\":1,\"duration_s\":9}"
