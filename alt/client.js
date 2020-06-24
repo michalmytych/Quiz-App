@@ -18,75 +18,75 @@ let saved_time = [];
 let nickname = "";
 let questions_data = [
     {
-        "question": "Jak wiele jest gatunków mrówek na świecie?",
-        "answ1": "Około 12 tys.",
-        "answ2": "Około 3 tys.",
-        "answ3": "Około 20 tys.",
-        "answ4": "Około 650",
+        "question": 'Który kod z podanych to poprawny program "Hello world!" w Pythonie?',
+        "answ1": "print('Hello world!')",
+        "answ2": "printline('HelloWorld');",
+        "answ3": "printf('Hello world!');",
+        "answ4": 'print(Hello world!)',
         "valid_answ": 1
     },
     {
-        "question": "Ukłucie przdstawicielki jednego z gatunków mrówek jest uważane za szczególnie bolesne. Który to gatunek?",
-        "answ1": "Mrówka igła",
-        "answ2": "Mrówka pociskowa",
-        "answ3": "Palaponera cravata",
-        "answ4": "Mrówka sztyletowa",
+        "question": "Jak można bardziej przejrzyście ująć liczbę 1000000000 w kodzie Pythona?",
+        "answ1": "1.000.000.000",
+        "answ2": "1_000_000_000",
+        "answ3": "1,000,000,000",
+        "answ4": "1/000/000/000",
         "valid_answ": 2
     },
     {
-        "question": "Osobniki jakiego gatunku mrówek osiągają największe rozmiary?",
-        "answ1": "Mrówka igła",
-        "answ2": "Mrówka pociskowa",
-        "answ3": "Mrówka Mrówka ",
-        "answ4": "Mrówka pociskowa",
+        "question": "Jakie typowanie zastosowano w Pythonie?",
+        "answ1": "mocne",
+        "answ2": "dynamiczne",
+        "answ3": "miękkie ",
+        "answ4": "szerokie",
         "valid_answ": 2
     },
     {
-        "question": "Do jakiej nadrodziny należą mrówki?",
-        "answ1": "Mrówkowatych",
-        "answ2": "Błonkówek",
-        "answ3": "Trzonkówki",
-        "answ4": "Os",
+        "question": "Która metoda zwróci listę wyrazów z podanego łańcucha znaków (lancuch)?",
+        "answ1": "lancuch.divbywhitespace()",
+        "answ2": "lancuch / ' '",
+        "answ3": "lancuch.share()",
+        "answ4": "lancuch.split()",
         "valid_answ": 4
     },
     {
-        "question": "Czym charakteryzują się robotnice mrówek?",
-        "answ1": "Są tak naprawdę samcami",
-        "answ2": "Ich liczebność w mrowisku może dochodzić do miliona",
-        "answ3": "Mają niedorozwinięte narządy rozrodcze",
-        "answ4": "Lubią alkohol",
+        "question": "Który z podanych typów jest niezmienny (immutable) w języku Python?",
+        "answ1": "dict",
+        "answ2": "list",
+        "answ3": "tuple",
+        "answ4": "bytearray",
         "valid_answ": 3
     },
     {
-        "question": "Mrówki grzybiarki są wyjątkowo silne. Ile razy większy od ich własnej wagi, może być niesiony przez nie ciężar?",
-        "answ1": "30 razy",
-        "answ2": "około 100 razy",
-        "answ3": "50 razy",
-        "answ4": "15 razy",
+        "question": "Jaka jest funkcja dekoratorów w Pythonie?",
+        "answ1": "Stwarzają skrót do dekorowanej funkcji",
+        "answ2": "Ułatwiają znalezienie funkcji w kodzie",
+        "answ3": "Opakowywują obiekt nadając mu nowe właściwości",
+        "answ4": "Zmieniają nazwę funkcji",
         "valid_answ": 3
     },
     {
-        "question": "W gnieździe mrówek może występować jedna królowa, Jak nazywa się taki stan?",
-        "answ1": "Autokracja",
-        "answ2": "Monoginia",
-        "answ3": "Elewacja",
-        "answ4": "Monogynia",
+        "question": "Czym są funkcje lambda w Pythonie?",
+        "answ1": "Są to funkcje przyjmujące tylko argumenty liczbowe",
+        "answ2": "Inaczej są to funkcje anonimowe",
+        "answ3": "Są to funkcje zwracające tylko wartości liczbowe",
+        "answ4": "Funkcje lambda nie mogą zwracać argumentów",
         "valid_answ": 2
     },
     {
-        "question": "Wierzy się, że mrówki istnieją na świecie od bardzo dawna. Jak dawna?",
-        "answ1": "od 2 miliardów lat",
-        "answ2": "od 120 milionów lat",
-        "answ3": "od 95 milionów lat",
-        "answ4": "od 500 milionów lat",
+        "question": "Kiedy pojawiła się pierwsza wersja Pythona?",
+        "answ1": "2002",
+        "answ2": "1991",
+        "answ3": "2000",
+        "answ4": "1997",
         "valid_answ": 2
     },
     {
-        "question": "Jak dużą częścią fauny regionów tropikalnych są mrówki?",
-        "answ1": "około 25%",
-        "answ2": "około 50%",
-        "answ3": "około 10%",
-        "answ4": "około 4%",
+        "question": "Który z podanych nie jest frameworkiem dla Pythona?",
+        "answ1": "Pyder",
+        "answ2": "Pyramid",
+        "answ3": "Django",
+        "answ4": "Flask",
         "valid_answ": 1
     }
 ]
@@ -182,7 +182,6 @@ function pushDataToApp(saved_time, nickname, score) {
 }
 
 
-// widok/kontroler
 window.onload = function () {
     question_no = 0;
     score = 0;
@@ -216,7 +215,7 @@ answer4.onclick = function () {
 
 function pad(val) { return val > 9 ? val : "0" + val; }
 setInterval(function () {
-    if (document.getElementById("minutes").style.display != "inline-block") sec = -1;     // timer zaczyna mierzyć dopiero jak jest widoczny
+    if (document.getElementById("minutes").style.display != "inline-block") sec = -1;     
     document.getElementById("seconds").innerHTML = ":" + pad(++sec % 60);
     document.getElementById("minutes").innerHTML = pad(parseInt(sec / 60, 10));
     if (saveTime) {
@@ -226,7 +225,7 @@ setInterval(function () {
         document.getElementById("duration_viewing").innerText = pad(parseInt((sec - 1) / 60, 10) + ":" + pad((sec - 1) % 60));
         document.getElementById("duration_viewing").style.display = "block";
         saveTime = false;
-        console.log(pushDataToApp(saved_time, nickname, score));    // odsyłanie wyniku gry do back-endu
+        console.log(pushDataToApp(saved_time, nickname, score));
     }
 }, 1000);
 
