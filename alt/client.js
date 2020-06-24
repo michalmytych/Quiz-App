@@ -151,6 +151,12 @@ function loadQuestion(question_no, questions_data, nickname) {
 }
 
 
+
+function gitDemo(){
+    console.log("Pokazuje kuzynowi jak dzaiala git");
+}
+
+
 function checkChoice(question_no, choice) {
     if (choice == questions_data[question_no].valid_answ) {
         score++;
